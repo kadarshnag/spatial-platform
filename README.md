@@ -35,3 +35,29 @@ python3 manage.py runserver
     GET /api/polygons/{id}/ → Retrieve single polygon
     PUT /api/polygons/{id}/ → Update polygon
     DELETE /api/polygons/{id}/ → Delete polygon
+
+## Sample Payloads
+### Point Payload
+    {
+        "name": "Central Park",
+        "coordinates": {
+            "latitude": 40.785091,
+            "longitude": -73.968285
+        }
+    }
+
+### Polygon Payload
+    {
+        "name": "Washington DC Area",
+        "coordinates": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-77.03653, 38.897676],
+                    [-77.009051, 38.889939],
+                    [-77.015083, 38.881258],
+                    [-77.03653, 38.897676]
+                ]
+            ]
+        }
+    }
